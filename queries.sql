@@ -45,4 +45,4 @@ FROM
 GROUP BY
   v.name
 HAVING
-  count(*) >= 2
+  count(*) > 2
