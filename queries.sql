@@ -8,8 +8,8 @@ SELECT
   b.status
 FROM
   bookings AS b
-  JOIN users AS u ON b.user_id = u.user_id
-  JOIN vehicles AS v ON b.vehicle_id = v.vehicle_id
+ INNER JOIN users AS u ON b.user_id = u.user_id
+ INNER JOIN vehicles AS v ON b.vehicle_id = v.vehicle_id
 
   -- 2
 SELECT
