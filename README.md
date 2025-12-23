@@ -15,7 +15,7 @@ CREATE TABLE users (
     user_id SERIAL PRIMARY KEY,
     name VARCHAR(50),
     email VARCHAR(200) UNIQUE,
-    phone DECIMAL(11,0),
+    phone DECIMAL(20,0),
     role VARCHAR(50) CHECK (role IN ('Admin', 'Customer'))
 );
 ```
